@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tastyc - Restaurant</title>
+
+    <!-- ✅ Bootstrap & Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet" />
+    <style>
+        .dropdown-menu {
+            background-color: #f39c12;
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: black !important;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #f39c12;
+            color: black !important;
+        }
+
+        /* Enable hover-based dropdowns */
+        @media (min-width: 992px) {
+            .navbar-nav .dropdown:hover .dropdown-menu {
+                display: block;
+                margin-top: 0;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Bootstrap Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Tastyc</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Home Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home Slider</a></li>
+                            <li><a class="dropdown-item" href="#">Home Image</a></li>
+                            <li><a class="dropdown-item" href="#">Home Video</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" role="button" data-bs-toggle="dropdown" onclick="window.location.href='about.html';">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About Me</a></li>
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">MENU TABS(WOOCOMMERCE)</a></li>
+                            <li><a class="dropdown-item" href="#">MENU LIST(WOOCOMMERCE)</a></li>
+                            <li><a class="dropdown-item" href="#">MENU TABS</a></li>
+                            <li><a class="dropdown-item" href="#">MENU LIST</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Order Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Order
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Reservation (Booking Calendar)</a></li>
+                            <li><a class="dropdown-item" href="#">Reservation (Contact Form 7)</a></li>
+                            <li><a class="dropdown-item" href="#">Reservation (OpenTable)</a></li>
+                            <li><a class="dropdown-item" href="#">RESERVATION POPUP</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Pages Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">GALLERY</a></li>
+                            <li><a class="dropdown-item" href="#">HISTORY</a></li>
+                            <li><a class="dropdown-item" href="#">FEATURES</a></li>
+                            <li><a class="dropdown-item" href="#">PRICING</a></li>
+                            <li><a class="dropdown-item" href="#">OUR CHEFS</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="#">TESTIMONIALS</a></li>
+                            <li><a class="dropdown-item" href="#">404 Page</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Blog Dropdown -->
+                    <li class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Blog
+                        </a> --> <a class="nav-link dropdown-toggle" href="blog.html" role="button" data-bs-toggle="dropdown" onclick="window.location.href='blog.html';">Blog</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">BLOG LIST</a></li>
+                            <li><a class="dropdown-item" href="#">BLOG POST</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+         <a class="nav-link dropdown-toggle" href="contact.html" role="button" data-bs-toggle="dropdown" onclick="window.location.href='contact.html';">contact</a>
+                    </li>
+
+                    <!-- Shop Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PRODUCT LIST</a></li>
+                            <li><a class="dropdown-item" href="#">SINGLE PRODUCT</a></li>
+                            <li><a class="dropdown-item" href="#">CART</a></li>
+                            <li><a class="dropdown-item" href="#">CHECK OUT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Right Side -->
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-warning text-white fw-bold">Reservation</button>
+                    <i class="fa fa-shopping-cart text-dark fs-5"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Your page content (hero, about, etc.) goes below as is -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <p class="welcome-text">Hello, new friend!</p>
+            <h1>Reserve Your<br />Table Today</h1>
+            <p class="subtext">Quaerat debitis, vel, sapiente dicta sequi labore porro pariatur harum expedita.</p>
+            <div class="hero-buttons">
+                <button class="reservation-btn">Reservation</button>
+                <a href="#" class="shop-link">Online Shop</a>
+            </div>
+            <div class="slider-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+    <!-- Side Icons -->
+    <div class="side-icons">
+        <i class="fa fa-eye"></i>
+        <i class="fa fa-cog"></i>
+        <i class="fa fa-shopping-basket"></i>
+        <i class="fa fa-th-large"></i>
+    </div>
+
+
+
+
+    <section class="about-us">
+        <div class="image-container">
+            <img src="about-950x713.jpg" alt="Bar" class="about-image">
+            <div class="play-button">
+                <span>&#9658;</span>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <p class="section-label"><span class="line"></span> ABOUT US</p>
+            <h2 class="main-heading">We invite you to <br> visit our restaurant</h2>
+            <p class="description">
+                Assumenda possimus eaque illo iste, autem. Porro eveniet, autem ipsam vitae amet repellat
+                repudiandae tenetur, quod corrupti consectetur cum? Repudiandae dignissimos fugiat sit nam.
+            </p>
+            <p class="description">
+                Tempore aspernatur quae repudiandae dolorem, beatae dolorum, praesentium itaque et quam quaerat. Cumque,
+                consequatur!
+            </p>
+
+            <div class="cta">
+                <a href="#" class="read-more-btn">READ MORE</a>
+                <div class="social-icons">
+                    <a href="#"><i class="icon">f</i></a>
+                    <a href="#"><i class="icon">i</i></a>
+                    <a href="#"><i class="icon">x</i></a>
+                    <a href="#"><i class="icon">▶</i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+<section class="features-section">
+    <div class="section-header">
+        <span class="subheading"><span class="line"></span> Features</span>
+        <h2>Why people choose us?</h2>
+        <p class="section-subtext">Porro eveniet, autem ipsam vitae consequatur!</p>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <img src="icon-serv-1-256x256.png" alt="Menu Icon" class="icon" />
+            <h3>Menu for every taste</h3>
+            <p>Dolor sit amet, consectetur adipisicing elit et molestias possimus</p>
+        </div>
+        <div class="feature">
+            <img src="icon-serv-2-256x256.png" alt="Fresh Icon" class="icon" />
+            <h3>Always fresh ingredients</h3>
+            <p>Assumenda possimus eaque illo iste, autem. Porro eveniet autem</p>
+        </div>
+        <div class="feature">
+            <img src="icon-serv-3-256x256.png" alt="Chef Icon" class="icon" />
+            <h3>Experienced chefs</h3>
+            <p>Rolorem, beatae dolorum, praesentium itaque et quam quaerat</p>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
+
+
+
+<section class="working-hours">
+    <div class="overlay">
+        <div class="left-content">
+            <span class="label"><span class="line"></span> About Us</span>
+            <h2>Working hours</h2>
+            <p>Rolorem, beatae dolorum, praesentium itaque et quam quaerat.</p>
+            <div class="buttons">
+                <a href="#" class="btn">Reservation</a>
+                <a href="#" class="contact-link">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="hours-box">
+            <div>
+                <h4>Sunday to Tuesday</h4>
+                <p><strong>09 <span>:</span> 00</strong></p>
+                <p><strong>22 <span>:</span> 00</strong></p>
+            </div>
+            <div style="margin-top: 30px;">
+                <h4>Friday to Saturday</h4>
+                <p><strong>11 <span>:</span> 00</strong></p>
+                <p><strong>19 <span>:</span> 00</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-box">
+        <h2>200 <span>+</span></h2>
+        <p>Visitors Daily</p>
+    </div>
+    <div class="stat-box">
+        <h2>400 <span>+</span></h2>
+        <p>Deliveries Monthly</p>
+    </div>
+    <div class="stat-box">
+        <h2>100 <span>%</span></h2>
+        <p>Positive Feedback</p>
+    </div>
+    <div class="stat-box">
+        <h2>40 <span>+</span></h2>
+        <p>Awards and Honors</p>
+    </div>
+</section>
+
+</body>
+
+</html>
+
+
+
+
+<section class="app-download">
+    <div class="app-content">
+        <p class="app-label">MOBILE APPLICATION</p>
+        <h2>Download <br> our application</h2>
+        <p class="app-desc">
+            Quaerat debitis, vel, sapiente dicta sequi labore porro pariatur harum expedita.
+        </p>
+        <div class="app-buttons">
+            <a href="#" class="store-btn"> AppStore</a>
+            <a href="#" class="store-btn">G PlayMarket</a>
+        </div>
+    </div>
+    <div class="app-image">
+        <div class="offer-badge">-50%</div>
+        <img src="burger-950x962.png" alt="Burger" />
+    </div>
+</section>
+
+
+
+
+<section class="testimonials">
+    <h4 class="sub-heading">TESTIMONIALS</h4>
+    <h2 class="main-heading">What Our visitors say</h2>
+    <p class="desc">
+        Porro eveniet, autem ipsam corrupti consectetur cum. <br>
+        Repudiandae dignissimos fugiat sit nam.
+    </p>
+
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <h3>The best restaurant!</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem
+                magnam nesciunt ullam hic error sed...
+            </p>
+            <div class="testimonial-footer">
+                <div class="user">
+                    <img src="face-2.jpg" alt="user" />
+                    <span>Oscar Oldman</span>
+                </div>
+                <span class="date">02.02.21</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card highlight">
+            <h3>It was very delicious!</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem
+                magnam nesciunt ullam hic error sed...
+            </p>
+            <div class="testimonial-footer">
+                <div class="user">
+                    <img src="face-3.jpg" alt="user" />
+                    <span>Emma Newman</span>
+                </div>
+                <span class="date">02.02.21</span>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <h3>I'm delighted!</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, eligendi dolorem? Voluptates rem
+                magnam nesciunt ullam hic error sed...
+            </p>
+            <div class="testimonial-footer">
+                <div class="user">
+                    <img src="face-4.jpg" alt="user" />
+                    <span>Viktoria Freeman</span>
+                </div>
+                <span class="date">02.02.21</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-bottom">
+        <a href="#" class="btn-yellow">More About Us</a>
+        <div class="nav-controls">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="slider-nav">
+            <button>&larr;</button>
+            <button>&rarr;</button>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="newsletter">
+    <p class="section-label">NEWSLETTER</p>
+    <h2 class="section-title">Use the tips <br> and recipes of our chefs</h2>
+    <p class="section-subtitle">
+        Porro eveniet, autem ipsam corrupti consectetur cum. <br>
+        Repudiandae dignissimos fugiat sit nam.
+    </p>
+
+    <div class="newsletter-cards">
+        <!-- Card 1 -->
+        <div class="blog-card">
+            <div class="blog-img">
+                <img src="blog-6.jpg" alt="Breakfast" />
+                <span class="tag">Deserts, Salads</span>
+            </div>
+            <div class="blog-content">
+                <h3>Business Breakfast</h3>
+                <p>
+                    Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis...
+                    <a href="#">Read More</a>
+                </p>
+                <div class="blog-meta">
+                    <span class="author">👤 Oleksandr</span>
+                    <span class="date">May 1, 2021</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="blog-card">
+            <div class="blog-img">
+                <img src="blog-5.jpg" alt="Pancakes" />
+                <span class="tag">Deserts</span>
+            </div>
+            <div class="blog-content">
+                <h3>Pancakes in Chocolate</h3>
+                <p>
+                    Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis...
+                    <a href="#">Read More</a>
+                </p>
+                <div class="blog-meta">
+                    <span class="author">👤 Oleksandr</span>
+                    <span class="date">May 1, 2021</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="blog-card">
+            <div class="blog-img">
+                <img src="blog-4.jpg" alt="Burger" />
+                <span class="tag">Deserts</span>
+            </div>
+            <div class="blog-content">
+                <h3>Tuna & Tomatoes</h3>
+                <p>
+                    Consectetur adipisicing elit. Soluta, impedit, saepe. Unde minima distinctio officiis...
+                    <a href="#">Read More</a>
+                </p>
+                <div class="blog-meta">
+                    <span class="author">👤 Oleksandr</span>
+                    <span class="date">May 1, 2021</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="btn-yellow" style="margin-top: 30px;">All Publications</a>
+</section>
+
+
+
+
+
+<section class="subscribe-newsletter">
+  <div class="overlay">
+    <p class="label">NEWSLETTER</p>
+    <h2 class="title">Subscribe our newsletter</h2>
+    <p class="subtitle">
+      Rolorem, beatae dolorum, praesentium itaque et quam quaerat.
+    </p>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email here" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-column">
+      <h3>About us</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+        repudiandae neque illum aspernatur fugiat maiores id magni.
+      </p>
+      <a href="#" class="footer-link">Read More</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact info</h3>
+      <p><strong>Call :</strong> +76 (094) 754 43 71</p>
+      <p><strong>Write :</strong> your.email.inbox@here.com</p>
+      <p><strong>Find us :</strong> Canada, Toronto, Avenue 31B</p>
+      <a href="#" class="footer-link">Read More</a>
+    </div>
+
+    <div class="footer-column">
+      <h3>Gallery</h3>
+      <div class="footer-gallery">
+        <img src="img1.jpg" alt="img1" />
+        <img src="img2.jpg" alt="img2" />
+        <img src="img3.jpg" alt="img3" />
+        <img src="img4.jpg" alt="img4" />
+      </div>
+      <a href="#" class="footer-link">See More</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <p class="copyright">
+      © Tastyc 2024. All rights reserved. Design by
+      <a href="#">bslthemes Team</a>
+    </p>
+
+    <a href="#top" class="back-to-top">Back to top</a>
+  </div>
+</footer>

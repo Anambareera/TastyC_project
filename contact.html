@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tastyc - Welcome</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+   <div class="bg-dark text-white p-5 rounded-3" style="background-image: url('bg.jpg.webp'); background-size: cover; background-position: center;">
+<nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm fixed-top w-100">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="logo-sm-new.png" alt="Tastyc Logo" style="width: 100px;">
+    </a>
+
+    <!-- Toggler for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <!-- About Dropdown -->
+        <li class="nav-item dropdown">
+          <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a> -->
+          <a class="nav-link dropdown-toggle" href="about me.html" role="button" data-bs-toggle="dropdown" onclick="window.location.href='about me.html';">About</a>
+          <ul class="dropdown-menu">
+
+            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#">About Me </a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Order</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pages</a>
+        </li>
+        <!-- Contact Dropdown -->
+        <li class="nav-item dropdown">
+        <a class="nav-link" href="#">blog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Blog List</a></li>
+            <li><a class="dropdown-item" href="#">Blog Post</a></li>
+          </ul>
+        </li>
+
+        <!-- Contact Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">Contact</a>
+      
+        </li>
+
+        <!-- Shop Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Shop</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Product list </a></li>
+            <li><a class="dropdown-item"  href="#"></a>Single product</li>
+            <li><a class="dropdown-item" href="#">Cart</a></li>
+            <li><a class="dropdown-item" href="#">Checkout</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Button -->
+      <a href="#" class="btn btn-warning ms-3">Reservation</a>
+    </div>
+  </div>
+</nav>
+
+
+
+  <style>
+    .dropdown-menu {
+      background-color: #f39c12;
+    }
+    .dropdown-menu .dropdown-item {
+      color: black !important;
+    }
+    .dropdown-menu .dropdown-item:hover {
+      background-color: #f39c12;
+      color: black !important;
+    }
+     /* Enable hover-based dropdowns */
+    @media (min-width: 992px) {
+      .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- Bootstrap Responsive Navbar -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Tastyc</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Home Dropdown -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Home
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home Slider</a></li>
+            <li><a class="dropdown-item" href="#">Home Image</a></li>
+            <li><a class="dropdown-item" href="#">Home Video</a></li>
+          </ul>
+        </li> -->
+
+       <!-- About Dropdown -->
+<!-- <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+    About
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="about.html">About Me</a></li>
+    <li><a class="dropdown-item" href="about.html#about-us">About Us</a></li>
+  </ul>
+</li> -->
+
+
+
+        <!-- Menu Dropdown -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Menu
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">MENU TABS(WOOCOMMERCE)</a></li>
+            <li><a class="dropdown-item" href="#">MENU LIST(WOOCOMMERCE)</a></li>
+            <li><a class="dropdown-item" href="#">MENU TABS</a></li>
+            <li><a class="dropdown-item" href="#">MENU LIST</a></li>
+          </ul>
+        </li> -->
+
+        <!-- Order Dropdown -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Order
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Reservation (Booking Calendar)</a></li>
+            <li><a class="dropdown-item" href="#">Reservation (Contact Form 7)</a></li>
+            <li><a class="dropdown-item" href="#">Reservation (OpenTable)</a></li>
+            <li><a class="dropdown-item" href="#">RESERVATION POPUP</a></li>
+          </ul>
+        </li> -->
+
+        <!-- Pages Dropdown -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">GALLERY</a></li>
+            <li><a class="dropdown-item" href="#">HISTORY</a></li>
+            <li><a class="dropdown-item" href="#">FEATURES</a></li>
+            <li><a class="dropdown-item" href="#">PRICING</a></li>
+            <li><a class="dropdown-item" href="#">OUR CHEFS</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+            <li><a class="dropdown-item" href="#">TESTIMONIALS</a></li>
+            <li><a class="dropdown-item" href="#">404 Page</a></li>
+          </ul>
+        </li> -->
+
+        <!-- Blog Dropdown -->
+         <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href= "blog.html" role="button" data-bs-toggle="dropdown" onclick="window.location.href='blog.html';">
+
+    Blog
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="blog.html">BLOG LIST</a></li>
+    <li><a class="dropdown-item" href="#">BLOG POST</a></li>
+  </ul>
+</li> -->
+
+
+          <!-- <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">BLOG LIST</a></li>
+            <li><a class="dropdown-item" href="#">BLOG POST</a></li>
+            
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+       -->
+
+
+        <!-- Shop Dropdown -->
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Shop
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">PRODUCT LIST</a></li>
+            <li><a class="dropdown-item" href="#">SINGLE PRODUCT</a></li>
+            <li><a class="dropdown-item" href="#">CART</a></li>
+            <li><a class="dropdown-item" href="#">CHECK OUT</a></li>
+          </ul>
+        </li>
+      </ul> -->
+
+      <!-- Right Side -->
+      <!-- <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-warning text-white fw-bold">Reservation</button>
+        <i class="fa fa-shopping-cart text-dark fs-5"></i>
+      </div>
+    </div>
+  </div>
+</nav> --> --> 
+<!-- Contact Hero Section -->
+<section class="contact-hero d-flex align-items-center justify-content-center">
+  <div class="text-center text-white">
+    <h5 class="text-uppercase text-warning">Contact</h5>
+    <h1 class="display-4 fw-bold">Contact</h1>
+    <p class="w-75 mx-auto">Quaerat debitis, vel, sapiente dicta sequi labore porro pariatur harum expedita.</p>
+    <a href="index.html" class="btn btn-warning mt-3">
+      <i class="fas fa-home me-1"></i> Home &nbsp; > &nbsp; Contact
+    </a>
+  </div>
+  <!-- Map Pin -->
+  <div class="map-pin">
+    <i class="fas fa-map-marker-alt fa-2x text-warning"></i>
+  </div>
+</section>
+
+<!-- Contact Info Section -->
+<section class="contact-info text-center py-5">
+  <h5 class="text-uppercase text-warning">Contact</h5>
+  <h2 class="fw-bold display-5">Contact information</h2>
+  <p class="text-muted">Porro eveniet, autem ipsam vitae consequatur!</p>
+</section>
+<!-- Contact Info Section -->
+<section class="contact-boxes text-center py-5 bg-light">
+  <div class="container">
+    <div class="row g-5 justify-content-center">
+      <!-- Write Us -->
+      <div class="col-md-4">
+        <div class="icon-box ">
+            <!-- <i class="fas fa-envelope-open-text fa-3x icon-style"></i> -->
+
+           <img src="icon-contact-email-256x256.png"  alt="">
+        </div>
+        <h5 class="fw-bold text-dark">Write Us</h5>
+        <p class="text-muted mb-0">info@tastyc.com</p>
+        <p class="text-muted">reservation@tastyc.com</p>
+      </div>
+
+      <!-- Call Us -->
+      <div class="col-md-4">
+        <div class="icon-box mb-3">
+          <!-- <i class="fas fa-phone-alt fa-3x icon-style"></i> -->
+           <img src="icon-contact-tel-256x256.png" alt="">
+        </div>
+        <h5 class="fw-bold text-dark">Call Us</h5>
+        <p class="text-muted mb-0">+76 (094) 754 43 71</p>
+        <p class="text-muted">+76 (093) 753 43 72</p>
+      </div>
+
+      <!-- Visit Us -->
+      <div class="col-md-4">
+        <div class="icon-box mb-3">
+          <!-- <i class="fas fa-map-marker-alt fa-3x icon-style"></i> -->
+           <img src="icon-contact-adr-256x256.png" alt="">
+        </div>
+        <h5 class="fw-bold text-dark">Visit Us</h5>
+        <p class="text-muted">Canada, Toronto, North Avenue 31B</p>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="dotted-divider my-5" />
+
+    <!-- Contact Form Heading -->
+    <div class="text-center mb-4">
+      <h6 class="text-warning text-uppercase">Contact</h6>
+      <h2 class="fw-bold text-dark">Write us a message</h2>
+      <p class="text-muted">Porro eveniet, autem ipsam vitae consequatur!</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="row g-4 justify-content-center">
+      <div class="col-md-5">
+        <input type="text" class="form-control rounded-3 py-2" placeholder="First Name" required />
+      </div>
+      <div class="col-md-5">
+        <input type="text" class="form-control rounded-3 py-2" placeholder="Last Name" required />
+      </div>
+      <div class="col-md-5">
+        <input type="text" class="form-control rounded-3 py-2" placeholder="Phone" required />
+      </div>
+      <div class="col-md-5">
+        <input type="email" class="form-control rounded-3 py-2" placeholder="Email" required />
+      </div>
+      <div class="col-md-10">
+        <textarea class="form-control rounded-3 py-3" rows="5" placeholder="Message" required></textarea>
+      </div>
+      <div class="col-md-10 text-center">
+        <button type="submit" class="btn btn-warning px-4">Send Message</button>
+      </div>
+    </form>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer-section text-white pt-5 pb-4" style="background-color: #0f1a1c;">
+  <div class="container">
+    <div class="row text-start g-4">
+      <!-- About Us -->
+      <div class="col-md-4">
+        <h4 class="fw-bold">Tastyc</h4>
+        <hr class="border-warning opacity-100 mt-2 mb-3" style="width: 50px;">
+        <h6 class="text-uppercase mb-3">About us</h6>
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expedita repudiandae neque illum aspernatur
+          fugiat maiores id magni, modi, quaerat vitae. Consectetur adipisicing elit.
+        </p>
+        <a href="#" class="text-warning text-uppercase small fw-bold">Read more</a>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4">
+        <h6 class="text-uppercase mb-3">Contact info</h6>
+        <p class="mb-1"><strong>Call :</strong> &nbsp; +76 (094) 754 43 71</p>
+        <p class="mb-1"><strong>Write :</strong> &nbsp; youremail.inbox@here.com</p>
+        <p class="mb-3"><strong>Find Us :</strong> &nbsp; Canada, Toronto, Avenue 31B,</p>
+        <a href="#" class="text-warning text-uppercase small fw-bold">Read more</a>
+      </div>
+
+      <!-- Gallery -->
+      <div class="col-md-4">
+        <h6 class="text-uppercase mb-3">Gallery</h6>
+        <div class="d-flex flex-wrap gap-2">
+          <img src="https://tastyc.bslthemes.com/wp-content/webp-express/webp-images/uploads/2021/04/gallery-i-2-140x140.jpg.webp" alt="Gallery 1" class="rounded" width="60" height="60">
+          <img src="https://tastyc.bslthemes.com/wp-content/webp-express/webp-images/uploads/2021/04/gallery-i-3-140x140.jpg.webp" alt="Gallery 2" class="rounded" width="60" height="60">
+          <img src="https://tastyc.bslthemes.com/wp-content/webp-express/webp-images/uploads/2021/04/gallery-i-4-140x140.jpg.webp" alt="Gallery 3" class="rounded" width="60" height="60">
+          <img src="https://tastyc.bslthemes.com/wp-content/webp-express/webp-images/uploads/2021/04/gallery-i-6-140x140.jpg.webp" alt="Gallery 4" class="rounded" width="60" height="60">
+        </div>
+        <a href="#" class="text-warning text-uppercase small fw-bold d-block mt-2">See more</a>
+      </div>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="text-center mt-4">
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <!-- Bottom -->
+    <div class="d-flex justify-content-between align-items-center mt-4 border-top border-secondary pt-3">
+      <small>© Tastyc 2024. *All rights reserved. Design by <span class="text-warning">bslThemes Team</span></small>
+      <a href="#" class="text-warning fw-bold text-uppercase small">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding-top: 70px;
+  background-color: #fff;
+}
+
+.contact-hero {
+  background: url('https://tastyc.bslthemes.com/wp-content/webp-express/webp-images/uploads/2021/04/bg.jpg.webp') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.contact-hero h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.contact-hero p {
+  color: #d1d1d1;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+} 
+.contact-info {
+  background-color: #fff;
+  border-radius: 30px 30px 0 0;
+  margin-top: -50px;
+  z-index: 2;
+  position: relative;
+}
+.contact-boxes i.icon-style {
+  color: #000000;
+  transition: transform 0.3s ease;
+
+}
+.icon-box img{
+  height: 70px;
+}
+
+.contact-boxes .icon-box:hover i {
+  transform: scale(1.1);
+  color: #ffc107;
+}
+
+.dotted-divider {
+  border-top: 2px dotted #ccc;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-boxes input,
+.contact-boxes textarea {
+  background-color: #ffffff;
+  border: 1px solid #ffe1e1;
+  box-shadow: none;
+  transition: border 0.3s ease;
+}
+
+.contact-boxes input:focus,
+.contact-boxes textarea:focus {
+  border-color: #ffc107;
+  outline: none;
+  box-shadow: 0 0 0 0.15rem rgba(255, 193, 7, 0.25);
+}
+
+.contact-boxes button {
+  border-radius: 50px;
+}
+.footer-section a {
+  text-decoration: none;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+}
+.footer-section img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.footer-section img:hover {
+  transform: scale(1.05);
+}
